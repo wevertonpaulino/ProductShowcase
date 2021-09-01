@@ -1,0 +1,28 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Mouse Logitech",
+            "valor": 244.31,
+            "promocao": false,
+            "valorPromo": 0,
+            "imagem": "mouse_logitech.jpg"
+        },
+        {
+            "id": 2,
+            "nome": "Teclado HyperX",
+            "valor": 399.89,
+            "promocao": false,
+            "valorPromo": 0,
+            "imagem": "teclado_hyperx.jpg"
+        },
+        {
+            "id": 3,
+            "nome": "Monitor Dell",
+            "valor": 1449.00,
+            "promocao": true,
+            "valorPromo": 1349.00,
+            "imagem": "monitor_dell.jpg"
+        }
+    ]
+}

@@ -10,6 +10,9 @@ import { ContactComponent } from './institutional/contact/contact.component';
 import { RouterModule } from '@angular/router';
 import { rootRouterConfig } from './app.routes';
 import { APP_BASE_HREF } from '@angular/common';
+import { ProdutoService } from './produtos/produtos.service';
+import { ProdutosComponent } from './produtos/produtos.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,13 +21,16 @@ import { APP_BASE_HREF } from '@angular/common';
     HomeComponent,
     FooterComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ProdutosComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     [RouterModule.forRoot(rootRouterConfig, { useHash: false })]
   ],
   providers: [
+    ProdutoService,
     { provide: APP_BASE_HREF, useValue: '/' }
   ],
   bootstrap: [AppComponent]
